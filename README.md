@@ -1,7 +1,7 @@
 # auth0-2fa-sms-email
 Auth0 2FA using Passwordless and Redirect Rules
 
-Setting up Passwordless Client
+### Setting up Passwordless Client
 Create a new application in Auth0 Dashboard and choose Regular Web Application type.
 
 
@@ -32,3 +32,7 @@ PROGRESSIVE_PROFILE_SPA_URL
 
 The absolute url to this SPA application.
 
+### Running it locally
+- copy .env.sample to .env file and update the values as required.
+- Run npm install
+- Run npm start
