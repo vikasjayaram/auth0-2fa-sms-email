@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%-title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="//cdn.auth0.com/styleguide/latest/lib/logos/img/favicon.png" rel="shortcut icon">
+    <style>
+      body { padding-top: 20px; padding-bottom: 20px; }
+      .jumbotron { text-align: center; border-bottom: 1px solid #e5e5e5; }
+      .jumbotron .btn { padding: 14px 24px; font-size: 21px; }
+    </style>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+        <div class="jumbotron">
+          <h1><%= title %></h1>
+          <p>Enter the code sent to your email / registered mobile below to continue!</p>
+          <form action=<%= action %> method="post">
+            <input type="hidden" class="form-control" id="emailOrPhone" name="emailOrPhone" value="<%= user.username %>">
+            <input type="hidden" class="form-control" id="state" name="state" value="<%= user.state %>">
+            <input type="number" class="form-control" id="otp" name="otp" required>
+            <br/> 
+            <br/>
+            <input type="submit" class="btn btn-success" value="Verify">
+          </form>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>  </body>
+</html>
