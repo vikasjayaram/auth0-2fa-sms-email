@@ -33,6 +33,6 @@ PROGRESSIVE_PROFILE_SPA_URL
 The absolute url to this SPA application.
 
 ### Running it locally
-- copy .env.sample to .env file and update the values as required.
-- Run npm install
-- Run npm start
+- copy `.env.sample` to `.env` file and update the values as required.
+- Run `npm install`
+- Run `npm start`
